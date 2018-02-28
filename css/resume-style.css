@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding-bottom: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    padding: 1em 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0499ff;
+}
+
+a:hover {
+    color: #ff9904;
+}
+
+section {
+    text-align: left;
+}
+
+section h1 {
+    padding-bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+
+header h1 {
+    padding-bottom: 0;
+}
+
+header h2 {
+    padding-top: 0;
+}
+
+section p{
+    padding-bottom: 0;
+}
+
+.technical-skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+@media screen and (min-width: 700px){
+    body {
+        font-size: 100%;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .education ul , .technical-skills ul{
+        columns: 2;
+        column-gap: 2em;
+    }
+
+
+
+}
