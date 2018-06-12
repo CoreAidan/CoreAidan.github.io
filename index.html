@@ -1,101 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
-    <title>Aidan Melendez</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CoreAidan | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 </head>
-
 <body>
+  <div class="title">
+    <h1>Aidan Melendez</h1>
+  </div>
 
-    <!-- nav -->
-    <div class="main-nav">
-        <ul class="nav">
-            <li class="name">Aidan Melendez</li>
-            <li><a href="#top">Home</a></li>
-            <li><a href="html/resume.html">Experience</a></li>
-            <li><a href="https://github.com/CoreAidan?tab=repositories">Projects</a></li>
-            <li><a href="#section-c">Contact</a></li>
-        </ul>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+              <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+              <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+          </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="">Blog</a>
+  </div>
+
+  <div class="parallax-img">
+    <div class="ptext">
+      <h2>About Aidan Melendez</h2>
+      <p>discoverer. fixer. creator.</p>
+      <span class="borde">
+      </span>
+      <br/>
+      <a href="#contact" class="plink">Contact</a>
+    </div>
+  </div>
+
+  <div id="simpleModal" class="modal">
+      <div class="modal-content">
+          <div class="modal-header">
+              <span class="closeBtn" id="closeBtn">&times;</span>
+              <h2 id="modalHeader">Modal Header</h2>
+          </div>
+          <div class="modal-body">
+              <p id="modalP1">hello.. i am a modal</p>
+              <p id="modalP2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur iusto, corporis a architecto repellendus dolor autem, tempora cumque obcaecati laborum minima quae ab expedita sequi maiores ducimus reprehenderit explicabo?</p>
+          </div>
+          <div class="modal-footer">
+              <h3 id="modalFooter">Modal Footer</h3>
+          </div>
+      </div>
+  </div>
+
+  <div class="square bg img1">
+    <div class="content">
+         <div class="table">
+             <a href="#" class="table-cell modalBtn">
+                 Watch as a genetic learning algorith finds a path to the target with each generation.
+             </a>
+         </div>
+     </div>
+ </div>
+ <div class="square bg img2">
+     <div class="content">
+         <div class="table">
+            <a href="#" class="table-cell modalBtn">
+              Need a weight converter that works in real time and instantaneously look no further.
+            </a>
+         </div>
+     </div>
+ </div>
+ <div class="square bg img3">
+     <div class="content">
+         <div class="table">
+            <a href="#" class="table-cell modalBtn">
+              Ever just could not remember that awesome new idea that was going to make you millions!
+            </a>
+         </div>
+     </div>
+ </div>
+ <div class="square bg img4">
+  <div class="content">
+      <div class="table">
+          <a href="#" class="table-cell modalBtn">
+            Watch as a genetic learning algorith finds a path to the target with each generation.
+          </a>
+      </div>
+  </div>
+</div>
+
+  <!-- <section class="section section-project grid-project">
+    <ul class="projects">
+      <li>project 1</li>
+      <li>project 2</li>
+      <li>project 3</li>
+      <li>project 4</li>
+    </ul>
+  </section> -->
+
+  <section class="section section-quote grid" >
+    <div class="main-wrap grid">
+        <img class="quote-image" src="img/computer-desk.jpg" alt="">
+        <div class="content-wrap">
+          <p id="quoteText">"a random quote will be told here by people of importants"</p>
+          <h4 id="quoteAuth">People of Impotants</h4>
+        </div>
+    </div>
+  </section>
+
+  <section class="section section-contact grid-contact">
+    <h2>Get in Touch</h2>
+    <div class="contact-form" id="contact">
+      <form action="mailto:aidanmelendez@gmail.com" method="post" enctype="text/plain">
+        <input type="text" autocomplete="off" name="name" placeholder="Name"><br>
+        <input type="text" autocomplete="off" name="mail" placeholder="Email"><br>
+        <input type="text" autocomplete="off" name="phone" placeholder="Phone"><br>
+        <input type="text" autocomplete="off" name="address" placeholder="Address"><br>
+        <input type="text" autocomplete="off" name="subject" placeholder="Subject"><br>
+        <textarea name="message" autocomplete="off" placeholder="Message "id="" cols="30" rows="10"></textarea>  <br>
+        <input type="submit" value="Send" id="send">
+      </form>
     </div>
 
-    <!-- header showcase-->
-    <header id="showcase" class="grid">
-        <div class="bg-image"></div>
-        <div class="content-wrap">
-            <div class="me-image"></div>
-            <h2>Aidan Melendez</h2>
-            <h3>Software Developer</h3>
-        </div>        
-    </header>
-
-    <!-- Main Area -->
-    <main id="main">
-        <!--Section A-->
-        <section id="section-a" class="grid">
-            <div class="content-wrap">
-                <h2 class="content-title">About Me</h2>
-                <div class="content-text">
-                    <p>Welcome, my name is Aidan. I am a software developer from New Jesery in America who is 
-                        truly passionate about writting software, building products and helping businesses succeed 
-                        with their goals. I understand good design and form. I work exceptionally well alone or 
-                        with others. I occasionally dabble in game development and art illustration.</p>
-                </div>
-            </div>
-        </section>
-        <!--Section b-->
-        <section id="section-b" class="grid">
-            <div class="content-wrap">
-                <h2 class="content-title">Skills</h2>
-                <div class="content-text">
-                    Languages
-                </div>
-                <ul class="skills">
-                    <li>Java</li>
-                    <li>C++</li>
-                    <li>C</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SQL</li>
-                </ul>
-                <div class="content-text">
-                    Frameworks &amp; Technologies
-                </div>
-                <ul class="skills">
-                    <li>Spark</li>
-                    <li>Spring</li>
-                    <li>Hibernate</li>
-                    <li>JPA</li>
-                    <li>H2</li>
-                    <li>mySQL</li>
-                </ul>
-            </div>
-        </section>
-        <!--Section c-->
-        <section id="section-c" class="grid">
-            <div class="box">
-                <h2 class="content-text">Connect</h2>
-                <a href="https://github.com/CoreAidan" target="_blank" ><span class="fab fa-github"> Github</span></a><br>
-                <a href="https://www.linkedin.com/in/aidan-melendez-2a8894132/" target="_blank"  ><span class="fab fa-linkedin-in"> Linkedin</span></a><br>
-                <a href="https://plus.google.com/u/0/109202876432406412429" target="_blank" ><span class="fab fa-google-plus-g"> Google+</span></a><br>
-                <a href="https://www.facebook.com/profile.php?id=100009097038325" target="_blank" ><span class="fab fa-facebook-f"> Facebook</span></a><br>
-            </div>
-            <div class="box">
-                    <h2 class="content-text">Contact</h2>
-                    <p>Thank you for visiting the site. For any business enquiries, please email me at </p>
-                    <a href="mailto:aidanmelendez@gmail.com">
-                        <p>AidanMelendez@gmail.com</p>
-                    </a>
-                </div>
-        </section>
-    </main>
-    <!-- main footer -->
-    <footer id="main-footer" class="grid">
-        <div>&copy;Copyright 2018 Aidan Melendez. All Rights Reserved.</div>
-    </footer>
+    <div class="contact-info">
+        <p>332 Byron St Camden, NJ 08102</p>
+        <p>aidanmelendez@gmail.com</p>
+        <p>8566020951</p>
+    </div>
+  </section>
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+  <footer id="main-footer">
+    <p>8566020951</p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/aidan-melendez-2a8894132/" target="_blank" ><span class="fab fa-linkedin-in"></span></a></li><br>
+        <li><a href="https://www.facebook.com/profile.php?id=100009097038325" target="_blank" ><span class="fab fa-facebook-f"></span></a></li><br>
+        <li><a href="https://github.com/CoreAidan" target="_blank" ><span class="fab fa-github"></span></a></li><br>
+    </ul>
+    <div>&copy;2018 Aidan Melendez. All Rights Reserved.</div>
+  </footer> 
 </body>
 </html>
+

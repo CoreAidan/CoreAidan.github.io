@@ -1,0 +1,226 @@
+/*core styles*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0499ff;
+  }
+  a:hover {
+    color: #ff9904;
+  }
+
+/*main nav*/
+
+.main-nav {
+    width: 100%;
+    background: black;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav .name {
+    display: none;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+
+.nav a{
+    transition: all .5s;
+}
+
+
+.nav a:hover {
+    color: white
+}
+
+/*header shocase*/
+
+#showcase {
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 0;
+}
+
+#showcase .bg-image {
+    position: absolute;
+    background: #333 url('../img/programming-text.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px; /*same as the parent container*/
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#showcase .me-image {
+    background: #333 url('../img/Aidan.jpg');
+    background-size: 150px 169px;
+    background-position: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: all .5s;
+}
+
+#showcase .me-image:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+#showcase h2 {
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+#showcase .content-wrap, #section-a .content-wrap, {
+    padding: 0 1.5em;
+}
+
+/* section A*/
+
+#section-a {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+/*section B*/
+
+#section-b {
+    padding: 2em 1em 1em;
+}
+
+#section-b ul.skills {
+    padding: 0;
+    text-align: center;
+}
+  
+#section-b .skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #ff9904;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+}
+  
+#section-b .skills li:nth-child(odd) {
+    background: #0399ff;
+}
+
+/* section C*/
+
+#section-c {
+    background: #fff;
+    color: #333;
+}
+
+#section-c .box:nth-last-child(1) {
+    background: #0399ff;
+}
+
+#section-c .box a {
+    transition: all .5s;
+}
+
+#section-c .box:nth-last-child(1) a {
+    color: #fff;
+}
+
+#section-c .box:nth-last-child(1) a:hover {
+    color: #ff9904;
+}
+
+/* Footer */
+
+#main-footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#main-footer {
+    color: #0399ff;
+}
+
+/*styles for larger screens*/
+
+@media screen and (min-width: 720px) {
+    .nav {
+        max-width: 1200px;
+    }
+
+    .nav .name {
+        display: block;
+        margin-right: auto;
+        color: white;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    #showcase h2 {
+        padding-top: 30px;
+    }
+
+
+    #section-a .content-text {
+        
+    }
+
+    #section-a .content-text p {
+        padding-top: 0;
+    }
+
+    
+
+    .content-wrap, .me-image {
+        grid-column: 2/4;
+    }
+
+    .box, #main-footer div {
+        grid-column: span 2;
+    }
+}

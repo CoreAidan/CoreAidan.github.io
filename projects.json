@@ -1,0 +1,30 @@
+[
+	{
+		"title": "Smart Rockets",
+		"header": "Watch as a genetic learning algorithm learns to reach it's target while a voiding obsticals<br>",
+		"image": "<img id=\"desc-image\" src=\"https://i.imgflip.com/1yvwf9.gif\"/><br>",
+		"desc": "<p>This is a program originally made in c++ using the SFML library. This version has been redone in p5.js for the web. This project was one of the most fun that I had on a project. It was honesty a lot easy than the topic seems at first. Hearing the term Genetic Algorythm souds really intimidating.</p>",
+		"link": "<a href=\"SmartRockets/index.html\" target=\"_blank\">Check it out live!</a>"
+	},
+	{
+		"title": "Weight Converter",
+		"header": "Convert pounds into grams, kilograms, and ounces in real time!<br>",
+		"image": "<img id=\"desc-image2\" src=\"img/weight-img.png\"/><br>",
+		"desc": "This was fun little program I made in a like 30 minutes using bootstrap4 and alittle JavaScript.",
+		"link": "<a href=\"weight-converter/index.html\" target=\"_blank\">Check it out live!</a>"
+	},
+	{
+		"title": "IdeaBank",
+		"header": "Ever just could not remember that awesome new idea that was going to make you millions!<br>",
+		"image": "<img id=\"desc-image3\" src=\"img/idea-bank.png\"/><br>",
+		"desc": "This was one of the more bigger project I have made. Its a full stack application using node.js/Express. It also uses passport for local authorizion for signing in and out and mongodb for storing user info. This project took around 20 hour, although the project is very simple it help bridge some gaps in my skills and made more capable as a software dev.",
+		"link": "<a href=\"https://secret-ocean-80516.herokuapp.com/users/login\" target=\"_blank\" >Check it out live!</a>"
+	},
+	{
+		"title": "More Project in the works",
+		"header": "I am always working on more project",
+		"image": "",
+		"desc": "Ever what to track my project check them out at my github account",
+		"link": "<a href=\"https://github.com/CoreAidan\" target=\"_blank\">Check it out live!</a>"
+	}
+]
