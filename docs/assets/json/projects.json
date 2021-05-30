@@ -1,0 +1,38 @@
+[
+    {
+        "identifier": "3DADB0A9-72E1-4A39-A060-A555375697A3",
+        "name": "Personal Website",
+        "clientName": "Myself",
+        "website": "http://aidanmelendez.com",
+        "intro": "This website is used to help showcase my skills on personal and professional works. as well as be an example of what I can do.",
+        "shortDescription": "A personal web portfolio developed with Angular. Utilizing Angular, TypeScript and Reuseable components and Responsive UI.",
+        "requirements": [
+            "Have an about me page.",
+            "Showcase my projects.",
+            "Preview my techinal skills and work experiences."
+        ],
+        "previewImageName": "website-project.jpg",
+        "overview": "This project is a personal on going web portfolio developed with Angular. Utilizing Angular, TypeScript and Reuseable components and Responsive UI. This project will be constantly updated with my latest works, both professional and personal. This is to better showcase my skills as well as be an example of what I am capable of. This portfolio website went through multiple iterations, eventually landing to what you see today.",
+        "challenge": "While it is important to create an easy way to showcase and present yourself professionally to prospective employers. I was also looking for a way to better document the journey as I build and complete projects and furtur my skill. Leading to the creating of this website. So my problem was simple, how can I create a project that would document and show my talent online? I good ole portfolio website!",
+        "solution": "My first thought was just to use a flexible tool for building quick websites. Something like wix or squarespace. And the idea completely flew over my head, That I could just make it from scrach since well you know... I'm a web developer. After signing up on squared space and looking at some of the layouts. I thought to myself. I could easially make like this myself and the journey began. I initially though of making the site in just plain HTML3, CSS3 and Javascript, but I figured if I'm going to make a site to showcase my work with my tech stack it would make a great oppertunity to just use my tech stack. Who would have ever though of that. Well after deciding what technology to use and finally getting started I ended up at a cross road of if I wanted to create the styling completely from scratch or find a nice looking theme. I ended up going with the ladder as ever though I knew I could make something from the ground up. It would have been too time comsuming and what something I could put together quickly and still look nice. The theme I ended up going with and purchasing what the theme 'DevCard' by 3rd Wave Media. It was nice and simple and I could make and break up the site into an SPA in Angular that could make it fast and responsive.",
+        "results": "After a few hours I managed to create a simple but nice looking site that solved my inital problem of having no place to showcase my work in Angular and TypeScript and get it hosted live to the world. I will be continuing to add new project as they are completed. If you want to see what im currently working on you can take a look at my github page."
+    },
+    {
+        "identifier": "7DE8E0E9-EFE4-4B03-9EDA-610E4389DC49",
+        "name": "Smart Rockets",
+        "clientName": "Myself",
+        "website": "https://itch.io",
+        "intro": "I implement a genetic algorithm from scratch and create \"smart rockets\".  The rockets evolve to find the \"best\" path to a target, moving around obstacles.",
+        "shortDescription": "Made using the Godot Game engine. Uses a Genetic Learning Algorithm to train rocket objects to reach a selected target.",
+        "requirements": [
+            "Build a genetic algorithm from scatch.",
+            "Have a visual representation for the genetic algorithm.",
+            "Able to viewed on the web."
+        ],
+        "previewImageName": "smart-rockets.gif",
+        "overview": "I implement a genetic algorithm from scratch and create \"smart rockets\".  The rockets evolve to find the \"best\" path to a target, moving around obstacles.",
+        "challenge": "I wanted to learning about simple machine learning technique and decided to start with implementing a genetic learning algorithm.",
+        "solution": "After a bit of research on genetic learning algorithms I stumbled on a video tutorial by \"The Coding Train\" on YouTube. Although he was teaching the project using the p5.js framework I figured I would be able to get the same success in the tutorial utilizing the Godot Game Engine. Which is able to export for the web. Which was very important for mean since I would want to showcase the project on the porfolio in the future. ",
+        "results": "The project was a great success I ended up learning alot about how simple genetic rules implied I could could drive simple object to perform complex tasks. A solution derived on there own with no out side help."
+    }
+]

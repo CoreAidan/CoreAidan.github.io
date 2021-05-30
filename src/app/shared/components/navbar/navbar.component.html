@@ -1,0 +1,53 @@
+<header class="header text-center">
+    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Aidan Devs</a></h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <button class="navbar-toggler" [ngClass]="{'collapsed': collapsed}" type="button" data-toggle="collapse" data-target="#navigation" (click)="toggleCollapse()"
+            aria-controls="navigation" [ariaExpanded]="!collapsed" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navigation" class="collapse flex-column navbar-collapse" [ngClass]="{'show': show, 'collapsing': willBeCollapsing, 'collapse': !willBeCollapsing}" [ngStyle]="{'height': collapsing && collapsed? '762px' : null }">
+            <div class="profile-section pt-3 pt-lg-0">
+                <img class="profile-image mb-3 rounded-circle mx-auto" src="../../../assets/img/profile.jpg"
+                    alt="image">
+
+                <div class="bio mb-3">Hi, my name is Aidan Melendez and I'm a full stack software developer. Welcome to my personal website!</div>
+                <!--//bio-->
+                <ul class="social-list list-inline py-3 mx-auto">
+                    <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/aidan-melendez-2a8894132"><fa-icon [icon]="['fab', 'linkedin-in']"></fa-icon></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/CoreAidan"><fa-icon [icon]="['fab', 'github-alt']"></fa-icon></a></li>
+                </ul>
+                <!--//social-list-->
+                <hr>
+            </div>
+            <!--//profile-section-->
+
+            <ul class="navbar-nav flex-column text-left">
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link" routerLink="/about"><fa-icon class="mr-2" [icon]="['fas', 'user']" [fixedWidth]="true"></fa-icon>About Me</a>
+                </li>
+                <li class="nav-item"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link" routerLink="/portfolio"><fa-icon class="mr-2" [icon]="['fas', 'laptop-code']" [fixedWidth]="true"></fa-icon>Portfolio</a>
+                </li>
+                <!-- <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link" href="services.html"><fa-icon class="mr-2" [icon]="['fas', 'briefcase']"></fa-icon>Services &amp; Pricing</a>
+                </li> -->
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link" routerLink="/resume"><fa-icon class="mr-2" [class]="tet" [icon]="['fas', 'file-alt']" [fixedWidth]="true"></fa-icon>Resume</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" routerLink="/blog"><fa-icon class="mr-2 fa-fw" [icon]="['fas', 'blog']"></fa-icon>Blog</a>
+                </li> -->
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link" routerLink="/contact"><fa-icon class="mr-2" [icon]="['fas', 'envelope-open-text']" [fixedWidth]="true"></fa-icon>Contact</a>
+                </li>
+            </ul>
+
+            <!-- <div class="my-2">
+                <a class="btn btn-primary" href="contact.html" target="_blank"><fa-icon class="pr-2" [icon]="['fas', 'paper-plane']"></fa-icon>Hire Me</a>
+            </div> -->
+        </div>
+    </nav>
+</header>
